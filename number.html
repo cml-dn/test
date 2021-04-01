@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<!-- <meta href="vue.js" /> -->
+		<title>单击产生随机数</title>
+	</head>
+	<body>
+		<div id="app-3">
+			<input type="button" value="随机数" @click="doit" />
+		</div>
+	<!-- 开发环境版本，包含了有帮助的命令行警告 -->
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<script>
+		var app3 = new Vue({
+			el: '#app-3',
+			methods:{
+				doit:function(){
+					// list a[]=[s1,s2,s3,s4,s5]
+						s1=Math.round(Math.random()*100),
+// 						s2=Math.round(Math.random()*100)
+// 						s3=Math.round(Math.random()*100)
+// 						s4=Math.round(Math.random()*100)
+// 						s5=Math.round(Math.random()*100)
+// 					
+					// alert("红球："+ a[]);
+					alert(s1);
+				}
+			}
+		})
+</script>
+	</body>
+</html>
